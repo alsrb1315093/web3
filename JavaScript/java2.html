@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>JavaScript연습</h1>
+    <input type="button" value="전원on스위치" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+    ">
+
+    <input type="button" value="전원off스위치" onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+    ">
+
+    <input id="스위치" type="button" value="전원off스위치" onclick="
+      if (document.querySelector('#스위치').value==='전원off스위치'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#스위치').value='전원on스위치'
+      }
+      else{
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#스위치').value='전원off스위치'
+      }
+    ">
+    <ol>
+      <li>대입연산자</li>
+      <li>비교연산자(comparison operator)</li>
+      <li>조건문(conditional statement)</li>
+    </ol>
+  </body>
+</html>
